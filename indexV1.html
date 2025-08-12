@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LavaPirates</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./ui/banner.png" />
+</head>
+<body>
+  <!-- Social Links -->
+  <header class="top-bar">
+    <div class="social-links">
+      <a href="https://t.me/YourChannel" target="_blank">Telegram</a>
+      <a href="https://twitter.com/YourProfile" target="_blank">Twitter</a>
+      <a href="https://discord.gg/YourInvite" target="_blank">Discord</a>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="./ui/banner.png" alt="Game Banner" />
+    <h1>Pirate Puzzle Adventure</h1>
+    <a class="play-btn" href="https://t.me/YourGameBot/PiratePuzzle">Play Now</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <h2>Game Features</h2>
+    <ul>
+      <li>⚓ Three Arenas: Easy, Medium, Expert</li>
+      <li>💰 Marketplace to Buy & Sell Cards</li>
+      <li>🏆 Live Leaderboards & Prizes</li>
+      <li>🗝️ Earn Keys & Unlock Chests</li>
+      <li>🎯 Daily Events & Rewards</li>
+    </ul>
+  </section>
+
+  <!-- Tutorials -->
+  <section class="tutorial">
+    <h2>How to Play</h2>
+    <ol>
+      <li>Join our Telegram Mini App.</li>
+      <li>Select your arena and crew cards.</li>
+      <li>Slide tiles to solve the puzzle.</li>
+      <li>Earn coins, crowns, and gems.</li>
+      <li>Climb the leaderboard and win prizes!</li>
+    </ol>
+  </section>
+
+  <!-- Winners -->
+  <section class="winners">
+    <h2>Recent Event Winners</h2>
+    <ul id="winner-list"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="copyright.html">Copyright</a>
+    </p>
+    <p>&copy; 2025 Pirate Puzzle Adventure. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Fetch dynamic winners
+    fetch('./winners.json')
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('winner-list');
+        data.forEach(winner => {
+          const li = document.createElement('li');
+          li.textContent = `${winner.name} — ${winner.prize} (${winner.date})`;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => console.error('Error loading winners:', err));
+  </script>
+</body>
+</html>
