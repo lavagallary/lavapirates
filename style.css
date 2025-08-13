@@ -24,7 +24,7 @@
     --ff-pixel: 'pixel', monospace;
     --ff-pirate: 'pirate', sans-serif;
 
-    --fs-1: 54px;
+    --fs-1: 48px;
     --fs-2: 34px;
     --fs-3: 30px;
     --fs-4: 26px;
@@ -116,7 +116,7 @@ body { overflow-x: hidden;}
     position: fixed;x
     top: 0;
     left: 0;
-    width: 100 vw;
+    width: 100%;
     background-color: var(--raisin-black-1);
     box-shadow: 0 3px 7px hsla(0, 0%, 0%, 0.5);
     padding-block: 20px;
