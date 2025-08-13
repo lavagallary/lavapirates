@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'pirate';
-  src: url('https://raw.githubusercontent.com/lavagallary/lavapirates/refs/heads/main/public/assets/fonts/pixel.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/lavagallary/lavapirates/refs/heads/main/public/assets/fonts/pirate.ttf') format('truetype');
   font-display: swap;
 }
 
@@ -111,11 +111,7 @@ body { overflow-x: hidden;}
 
 
 
-	/* Header */
-	.logo-size {
-	    width: 64px;
-	    height: 64px;
-	}	
+	/* Header */	
 .header {
     position: fixed;x
     top: 0;
@@ -125,6 +121,11 @@ body { overflow-x: hidden;}
     box-shadow: 0 3px 7px hsla(0, 0%, 0%, 0.5);
     padding-block: 20px;
     z-index: 4;
+}
+
+.logo-size {
+    width: 64px;
+    height: 64px;
 }
 
     .header .container { display: flex; justify-content: space-between; align-items: center; }
