@@ -112,9 +112,12 @@ body { overflow-x: hidden;}
 
 
 	/* Header */
-	
+	.logo-size {
+	    width: 64px;
+	    height: 64px;
+	}	
 .header {
-    position: fixed;
+    position: fixed;x
     top: 0;
     left: 0;
     width: 100 vw;
