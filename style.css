@@ -62,7 +62,7 @@ a, img, span, input, button, ion-icon { display: block; }
     button { font: inherit; background: none; border: none; cursor: pointer; }
     input { font: inherit; width: 100%; border: none; }
 html { font-family: var(--ff-pixel); scroll-behavior: smooth; }
-body { overflow-x: hidden; }
+body { overflow-x: hidden; background-color: var(--raisin-black-2);}
     body.active { overflow-y: hidden; }
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--raisin-black-2); }
@@ -117,7 +117,7 @@ body { overflow-x: hidden; }
     position: fixed;
     top: 0;
     left: 0;
-    width: 100 vw;
+    width: 100%;
     background-color: var(--raisin-black-1);
     box-shadow: 0 3px 7px hsla(0, 0%, 0%, 0.5);
     padding-block: 20px;
