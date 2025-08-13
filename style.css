@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@font-face {
+  font-family: 'pixel';
+  src: url('/public/assets/fonts/pixel.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'pirate';
+  src: url('/public/assets/fonts/pirate.ttf') format('truetype');
+  font-display: swap;
+}
 
 :root {
     --raisin-black-1: hsl(234, 14%, 14%);
@@ -11,11 +20,9 @@
     --orange: hsl(31, 100%, 51%);
     --white: hsl(0, 0%, 100%);
     --onyx: hsl(240, 5%, 26%);
-
-    --ff-refault: "Refault", Georgia;
-    --ff-oswald: 'Oswald', sans-serif;
-    --ff-poppins: 'Poppins', sans-serif;
-    --ff-sonsie: 'Sonsie One', sans-serif;
+    
+    --ff-pixel: 'pixel', monospace;
+    --ff-pirate: 'pirate', sans-serif;
 
     --fs-1: 54px;
     --fs-2: 34px;
@@ -54,7 +61,7 @@ li { list-style: none; }
 a, img, span, input, button, ion-icon { display: block; }
     button { font: inherit; background: none; border: none; cursor: pointer; }
     input { font: inherit; width: 100%; border: none; }
-html { font-family: var(--ff-poppins); scroll-behavior: smooth; }
+html { font-family: var(--ff-pixel); scroll-behavior: smooth; }
 body { overflow-x: hidden; }
     body.active { overflow-y: hidden; }
 ::-webkit-scrollbar { width: 8px; }
@@ -62,13 +69,13 @@ body { overflow-x: hidden; }
 ::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 10px; }
 
 .container { padding-inline: 15px; }
-.h1 { color: var(--white); font-family: var(--ff-refault); font-size: var(--fs-1); font-weight: var(--fw-400); text-transform: uppercase; }
-.h2 { font-size: var(--fs-2); color: var(--white); line-height: 1.2; text-transform: uppercase; font-family: var(--ff-oswald); }
-.h3 { font-family: var(--ff-oswald); font-size: var(--fs-2); text-transform: uppercase; line-height: 1.2; }
+.h1 { color: var(--white); font-family: var(--ff-pirate); font-size: var(--fs-1); font-weight: var(--fw-400); text-transform: uppercase; }
+.h2 { font-size: var(--fs-2); color: var(--white); line-height: 1.2; text-transform: uppercase; font-family: var(--ff-pirate); }
+.h3 { font-family: var(--ff-pixel); font-size: var(--fs-2); text-transform: uppercase; line-height: 1.2; }
 
 .btn {
     color: var(--white);
-    font-family: var(--ff-oswald);
+    font-family: var(--ff-pirate);
     font-size: var(--fs-6);
     font-weight: var(--fw-500);
     letter-spacing: 1px;
@@ -105,7 +112,10 @@ body { overflow-x: hidden; }
 
 
 /* Header */
-
+	.logo-size {
+	    width: 32px;
+	    height: 32px;
+	}
 .header {
     position: fixed;
     top: 0;
@@ -156,7 +166,7 @@ body { overflow-x: hidden; }
 /*Hero*/
 
 .hero {
-    background: url('https://i.postimg.cc/XqXRdnV1/hero-banner.jpg') no-repeat;
+    background: url('/public/assets/cover/banner.png') no-repeat;
     background-size: cover;
     background-position: top center;
     margin-top: 90px;
