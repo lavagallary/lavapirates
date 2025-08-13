@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'pixel';
-  src: url('/public/assets/fonts/pixel.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/lavagallary/lavapirates/refs/heads/main/public/assets/fonts/pixel.ttf') format('truetype');
   font-display: swap;
 }
 @font-face {
   font-family: 'pirate';
-  src: url('/public/assets/fonts/pirate.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/lavagallary/lavapirates/refs/heads/main/public/assets/fonts/pixel.ttf') format('truetype');
   font-display: swap;
 }
 
