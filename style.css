@@ -120,7 +120,7 @@ body { overflow-x: hidden; }
     position: fixed;
     top: 0;
     left: 0;
-    width: 100 vw;
+    width: 100%;
     background-color: var(--raisin-black-1);
     box-shadow: 0 3px 7px hsla(0, 0%, 0%, 0.5);
     padding-block: 20px;
