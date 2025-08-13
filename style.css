@@ -178,7 +178,7 @@ body { overflow-x: hidden;}
 
 .hero-subtitle {
     color: var(--white);
-    font-family: var(--ff-oswald);
+    font-family: var(--ff-pirate);
     font-size: var(--fs-7);
     font-weight: var(--fw-500);
     text-transform: uppercase;
@@ -186,7 +186,15 @@ body { overflow-x: hidden;}
     text-shadow: 0 7px hsla(0, 0%, 0%, 0.4);
     margin-bottom: 15px;
 }
-.hero-title { margin-bottom: 10px; font-family: var(--ff-sonsie);}
+.hero-title {
+    margin-bottom: 10px;
+    font-family: var(--ff-pirate);
+  max-width: 100%;
+  word-wrap: break-word; /* Breaks long words */
+  overflow-wrap: break-word; /* Modern equivalent */
+  white-space: normal; /* Allows text to wrap */
+  text-align: center; /* For mobile-friendly alignment */
+}
 .btn-group { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
 
 /*About*/
