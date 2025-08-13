@@ -111,11 +111,8 @@ body { overflow-x: hidden; }
 
 
 
-/* Header */
-	.logo-size {
-	    width: 32px;
-	    height: 32px;
-	}
+	/* Header */
+	
 .header {
     position: fixed;
     top: 0;
