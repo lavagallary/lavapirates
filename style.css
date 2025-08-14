@@ -20,7 +20,7 @@
     --orange: hsl(31, 100%, 51%);
     --white: hsl(0, 0%, 100%);
     --onyx: hsl(240, 5%, 26%);
-    
+    --violet: #520160;
     --ff-pixel: 'pixel', monospace;
     --ff-pirate: 'pirate', sans-serif;
 
@@ -61,7 +61,7 @@ li { list-style: none; }
 a, img, span, input, button, ion-icon { display: block; }
     button { font: inherit; background: none; border: none; cursor: pointer; }
     input { font: inherit; width: 100%; border: none; }
-html { font-family: var(--ff-pixel); scroll-behavior: smooth; background-color: var(--raisin-black-2);}
+html { font-family: var(--ff-pixel); scroll-behavior: smooth; background-color: var(--xiketic);}
 body { overflow-x: hidden;}
     body.active { overflow-y: hidden; }
 ::-webkit-scrollbar { width: 8px; }
@@ -113,7 +113,7 @@ body { overflow-x: hidden;}
 
 	/* Header */	
 .header {
-    position: fixed;x
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -168,7 +168,7 @@ body { overflow-x: hidden;}
 
 .hero {
     background: url('https://raw.githubusercontent.com/lavagallary/lavapirates/refs/heads/main/public/assets/cover/banner.png') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
     margin-top: 90px;
     padding: var(--section-padding) 0;
@@ -203,8 +203,8 @@ body { overflow-x: hidden;}
 
 /*About*/
 
-.section-wrapper { background: url('https://i.postimg.cc/VvvgBg2R/section-wrapper-bg.jpg') no-repeat; background-size: cover; background-position: center; }
-.about { background: url('https://i.postimg.cc/8zmyG7dL/about-img-shadow.png') no-repeat; background-size: 100%; background-position: center; padding: 120px 0 var(--section-padding); }
+.section-wrapper { background-color: var(--violet);}
+.about { background-color: var(--raisin-black-1); padding: 120px 0 var(--section-padding); }
 .about-banner { margin-bottom: 40px; }
 .about-img { width: 100%; }
 .character { display: none; }
@@ -288,9 +288,7 @@ body { overflow-x: hidden;}
 .gears-list { display: grid; gap: 50px; }
 .gears-card .card-banner {
     position: relative;
-    background: url('https://i.postimg.cc/JhHdWL8j/gears-card-bg.png') no-repeat;
-    background-size: contain;
-    background-position: center;
+    background: var(--raisin-black-1);
     width: 100%;
     aspect-ratio: 2 / 1.7;
     display: grid;
@@ -353,9 +351,7 @@ body { overflow-x: hidden;}
 
 .newsletter { padding: var(--section-padding) 0 120px; }
 .newsletter-card { 
-    background: url('https://i.postimg.cc/43KzBDHM/newsletter-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: var(--orange);
     padding: 50px 25px;
     border-radius: 12px;
     text-align: center;
@@ -377,10 +373,8 @@ body { overflow-x: hidden;}
 
 /*Footer*/
 
-.footer-top { 
-    background: url('https://i.postimg.cc/VkDjmjCj/footer-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    .footer-top {
+	background: var(--orange);
     padding: var(--section-padding) 0;
 }
     .footer-top .logo { width: max-content; margin-inline: auto; margin-bottom: 50px; }
